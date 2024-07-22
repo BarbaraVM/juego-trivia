@@ -1,0 +1,110 @@
+<html>
+     <head>
+        <title>Juego de las Adivinanzas.</title>
+     </head>
+     <body background="G:\Ejercicios js del libro\collage.jpg">
+           <h1 align="center"><font color="lime">JUEGO DE LAS ADIVINANZAS.</h1></font>
+
+         <SCRIPT LANGUAGE="Javascript">
+
+         function Gradeit()
+    {
+        function getselectedIndex () {
+        return document.quiz.q1.selectedIndex
+        return document.quiz.q2.selectedIndex
+        return document.quiz.q3.selectedIndex
+        return document.quiz.q4.selectedIndex
+        return document.quiz.q5.selectedIndex
+         }
+    
+        var Answers=new Array(1,1,3,2,3)
+        var UserAnswer = new Array(document.quiz.q1.selectedIndex,document.quiz.q2.selectedIndex,document.quiz.q3.selectedIndex,document.quiz.q4.selectedIndex,document.quiz.q5.selectedIndex)
+        var count0 = 0
+        var outcome = new Array(5)
+
+        if (Answers[0] == UserAnswer[0])
+        {count0 = count0 + 1}
+        else
+        {count0 = 0}
+
+        if (Answers[1] == UserAnswer[1])
+        {count1 = count0 + 1}
+        else
+        {count1 = count0}
+
+        if (Answers[2] == UserAnswer[2])
+        {count2 = count1 + 1}
+        else
+        {count2 = count1}
+
+        if (Answers[3] == UserAnswer[3])
+        {count3 = count2 + 1}
+        else
+        {count3 = count2}
+
+        if (Answers[4] == UserAnswer[4])
+        {count4 = count3 + 1}
+        else
+        {count4 = count3}
+
+        alert("Tiene" + count4 + "/5 aciertos.")
+     }
+         </SCRIPT>
+
+        <font color="lime">
+        <h1 align="center">
+        <FORM NAME="quiz">
+    
+         SECCIÓN PELICULAS.
+         <p>
+        <b> *1: ¿Cuál de éstas películas de animales no es del género de terror?</b>
+        <SELECT NAME="q1">
+        <OPTION SELECT Outcome>Seleccione una opción
+        <OPTION>Colmillo Blanco
+        <OPTION>Cujo
+        <OPTION>Los Pájaros
+        </SELECT>
+        <p>
+        
+        <b> *2: ¿Que película se basó en el libro de J.R.R.Tolkien?</b>
+        <SELECT NAME="q2">
+        <OPTION SELECTED Outcome>Seleccione una opción
+        <OPTION>El Señor de los Anillos
+        <OPTION>Harry Potter
+        <OPTION>Las Crónicas de Narnia
+        </SELECT>
+        <p>
+
+        <b> *3: ¿Cual de éstas películas bélicas no está basada en hechos reales?</b>
+        <SELECT NAME="q3">
+        <OPTION SELECTED Outcome>Seleccione una opción
+        <OPTION>La Lista de Schindler
+        <OPTION>Hasta el Último Hombre
+        <OPTION>Operación Overlord
+        </SELECT>
+        <p>
+
+        <b> *4: ¿Cual de éstas opciones no ganó el oscar a mejor película?</b>
+        <SELECT NAME="q4">
+        <OPTION SELECTED Outcome>Seleccione una opción
+        <OPTION>El Silencio de los Inocentes
+        <OPTION>Taxi Driver
+        <OPTION>Rocky
+        </SELECT>
+        <p>
+
+        <b> *5: ¿Cual de éstas peliculas de terror no se estrenó la decada del 70?</b>
+        <SELECT NAME="q5">
+        <OPTION SELECTED Outcome>Seleccione una opción
+        <OPTION>El Amanecer de los Muertos
+        <OPTION>El Exorcista
+        <OPTION>El Resplandor
+        </SELECT>
+        <p>
+
+     <INPUT TYPE="button" VALUE="Aciertos" onclick="Gradeit()" />
+     </FORM>
+    </font>
+     </h1>
+     </body>
+</html>

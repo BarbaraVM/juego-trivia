@@ -1,0 +1,118 @@
+<html>
+     <head>
+        <title>Juego de Adivinanzas.</title>
+     </head>
+     <body background="G:\Ejercicios js del libro\corcheas.jpg">
+
+         <SCRIPT LANGUAGE="Javascript">
+
+         function Gradeit()
+         {
+
+        function getselectedIndex () {
+        return document.quiz.q1.selectedIndex
+        return document.quiz.q2.selectedIndex
+        return document.quiz.q3.selectedIndex
+        return document.quiz.q4.selectedIndex
+        return document.quiz.q5.selectedIndex
+        }
+    
+        var Answers=new Array(3,2,3,1,1)
+        var UserAnswer = new Array(document.quiz.q1.selectedIndex,document.quiz.q2.selectedIndex,document.quiz.q3.selectedIndex,document.quiz.q4.selectedIndex,document.quiz.q5.selectedIndex)
+        var count0 = 0
+        var outcome = new Array(5)
+
+        var Answers=new Array(3,1,3,1,1)
+        var UserAnswer = new Array(document.quiz.q1.selectedIndex,document.quiz.q2.selectedIndex,document.quiz.q3.selectedIndex,document.quiz.q4.selectedIndex,document.quiz.q5.selectedIndex)
+        var count0 = 0
+        var outcome = new Array(5)
+
+        if (Answers[0] == UserAnswer[0])
+        {count0 = count0 + 1}
+        else
+        {count0 = 0}
+
+        if (Answers[1] == UserAnswer[1])
+        {count1 = count0 + 1}
+        else
+        {count1 = count0}
+
+        if (Answers[2] == UserAnswer[2])
+        {count2 = count1 + 1}
+        else
+        {count2 = count1}
+
+        if (Answers[3] == UserAnswer[3])
+        {count3 = count2 + 1}
+        else
+        {count3 = count2}
+
+        if (Answers[4] == UserAnswer[4])
+        {count4 = count3 + 1}
+        else
+        {count4 = count3}
+
+        alert("Tiene" + count4 + "/5 aciertos.")
+     }
+
+         </SCRIPT>
+
+        <font color="white">
+        <h1 align="center">
+        <FORM NAME="quiz">JUEGO DE LAS ADIVINANZAS.
+        <p>
+        SECCIÓN MÚSICA.
+        <p>
+        <b>*1)¿Que compositor Aleman del periodo barroco compuso Los Conciertos de Bradenburgo 
+        <br>Variaciones Goldberg y Tocata y Fuga en Re menor?</b>
+        <SELECT NAME="q1">
+        <OPTION SELECT Outcome>Seleccione una opción
+        <OPTION>Arcangelo Corelli
+        <OPTION>Antonio Vivaldi
+        <OPTION>Johann Sebastian Bach
+        </SELECT>
+        <p>
+        
+        <b> *2)¿Cual de estos compositores no pertenece al periodo del Clasisismo?</b>
+        <SELECT NAME="q2">
+        <OPTION SELECTED Outcome>Seleccione una opción
+        <OPTION>Arcangelo Corelli
+        <OPTION>Wolfgang Amadeus Mozart
+        <OPTION>Franz Joseph Haydn
+        </SELECT>
+        <p>
+
+        <b> *3)¿Que compositor ganó un Óscar honorífico en el 2006 y es conocido por 
+        <br>componer bandas sonoras del genero western?</b>
+        <SELECT NAME="q3">
+        <OPTION SELECTED Outcome>Seleccione una opción
+        <OPTION>John Williams
+        <OPTION>Hans Zimmer
+        <OPTION>Ennio Morricone
+        </SELECT>
+        <p>
+
+        <b> *4)¿que solista no inicio su carrera en la decada del 50?</b>
+        <SELECT NAME="q4">
+        <OPTION SELECTED Outcome>Seleccione una opción
+        <OPTION>Muddy Waters
+        <OPTION>Johnny Cash
+        <OPTION>Chuck Berry
+        </SELECT>
+        <p>
+
+        <b> *5)¿Cual de estas bandas no inicio en la decada del 60?</b>
+        <SELECT NAME="q5">
+        <OPTION SELECTED Outcome>Seleccione una opción
+        <OPTION>The Beatles
+        <OPTION>Led Zeppelin
+        <OPTION>Black Sabbath
+        </SELECT>
+        <p>
+
+    <INPUT TYPE="button" VALUE="Aciertos" onclick="Gradeit()" /> 
+    </FORM>
+    </font>
+    </h1>
+</BODY>
+</html>

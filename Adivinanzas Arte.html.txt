@@ -1,0 +1,110 @@
+<html>
+     <head>
+        <title>Juego de las Adivinanzas.</title>
+     </head>
+     <body background="G:\Ejercicios js del libro\BeFunky Collage.jpg">
+
+        <SCRIPT LANGUAGE="Javascript">
+
+         function Gradeit()
+         {
+
+        function getselectedIndex () {
+        return document.quiz.q1.selectedIndex
+        return document.quiz.q2.selectedIndex
+        return document.quiz.q3.selectedIndex
+        return document.quiz.q4.selectedIndex
+        return document.quiz.q5.selectedIndex
+        }
+    
+        var Answers=new Array(3,1,3,2,2)
+        var UserAnswer = new Array(document.quiz.q1.selectedIndex,document.quiz.q2.selectedIndex,document.quiz.q3.selectedIndex,document.quiz.q4.selectedIndex,document.quiz.q5.selectedIndex)
+        var count0 = 0
+        var outcome = new Array(5)
+
+        if (Answers[0] == UserAnswer[0])
+        {count0 = count0 + 1}
+        else
+        {count0 = 0}
+
+        if (Answers[1] == UserAnswer[1])
+        {count1 = count0 + 1}
+        else
+        {count1 = count0}
+
+        if (Answers[2] == UserAnswer[2])
+        {count2 = count1 + 1}
+        else
+        {count2 = count1}
+
+        if (Answers[3] == UserAnswer[3])
+        {count3 = count2 + 1}
+        else
+        {count3 = count2}
+
+        if (Answers[4] == UserAnswer[4])
+        {count4 = count3 + 1}
+        else
+        {count4 = count3}
+
+        alert("Tiene" + count4 + "/5 aciertos.")
+    }
+       </SCRIPT>
+
+        <h1 align="center">
+        <font color="yellow">JUEGO DE LAS ADIVINANZAS.
+        <FORM NAME="quiz">
+         <p>
+         SECCIÓN PINTURAS Y ESCULTURAS.
+         <p>
+        <b> *1: ¿Cual de estos artistas no es renacentista?</b>
+        <SELECT NAME="q1">
+        <OPTION SELECT Outcome>Seleccione una opción
+        <OPTION>Leonardo da Vinci
+        <OPTION>Miguel Angel
+        <OPTION>Salvador Dalí
+        </SELECT>
+        <p>
+        
+        <b> *2: ¿Cual de estas obras es de Miguel Angel?</b>
+        <SELECT NAME="q2">
+        <OPTION SELECTED Outcome>Seleccione una opción
+        <OPTION>El David
+        <OPTION>La Capilla Sixtina
+        <OPTION>Tres de Mayo en Madrid
+        </SELECT>
+        <p>
+
+        <b> *3: ¿Cual de éstos cuadros no es de tematica belica?</b>
+        <SELECT NAME="q3">
+        <OPTION SELECTED Outcome>Seleccione una opción
+        <OPTION>El Guernica
+        <OPTION>Tres de Mayo en Madrid
+        <OPTION>El Grito
+        </SELECT>
+        <p>
+
+        <b> *4: ¿Cual de éstos artistas no es español?</b>
+        <SELECT NAME="q4">
+        <OPTION SELECTED Outcome>Seleccione una opción
+        <OPTION>Salvador Dalí
+        <OPTION>Sandro Botticelli
+        <OPTION>Francisco Goya
+        </SELECT>
+        <p>
+
+        <b> *5: ¿Que modelo pintó Pierre Auguste Renoir?</b>
+        <SELECT NAME="q5">
+        <OPTION SELECTED Outcome>Seleccione una opción
+        <OPTION>Marilyn Monroe
+        <OPTION>Ellen Andrée
+        <OPTION>Jeanne Hebuterne
+        </SELECT>
+        <p>
+
+    <INPUT TYPE="button" VALUE="Aciertos" onclick="Gradeit()" />
+    </FORM>
+    </font>
+    </h1>
+     </body>
+</html>

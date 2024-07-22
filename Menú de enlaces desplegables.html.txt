@@ -1,0 +1,34 @@
+
+<html>
+        <head>
+            <title>Menu de enlaces.</title>
+        </head>
+        <body background="G:\Ejercicios js del libro\menu de enlaces.jpg">
+            <h1 color="black" align="center">JUEGO DE LAS ADIVINANZAS.
+               <br>
+               <br>Seccion de Artes.
+           </h1>
+           <br>
+            <h2 align="center">Seleccione la categoria</h2>
+            <SCRIPT LANGUAGE="javascript">
+                function LinkUp() {
+                    
+                    var number = document.DropDown.DDlinks.selectedIndex;
+                    location.href = document.DropDown.DDlinks.options[number].value;
+                    
+                }
+            </SCRIPT>
+   
+            <h2 align="center">
+            <fORM NAME="DropDown">
+                <SELECT NAME="DDlinks">
+                    <OPTION SELECTED>Seleccione un vinculo</OPTION>
+                    <OPTION VALUE="G:\Ejercicios js del libro\ADIVINANZAS PELICULAS.html">Sección Cine</OPTION>
+                    <OPTION VALUE="G:\Ejercicios js del libro\Adivinanzas Arte.html">Sección Pinturas</OPTION>
+                    <OPTION VALUE="">Seccion Música</OPTION>
+                </SELECT>
+            <INPUT TYPE="BUTTON" value="Clic para entrar" onClick="LinkUp()" />
+            </fORM>
+            </h2>
+        </body>
+   </html>
